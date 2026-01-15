@@ -1,2 +1,2 @@
 # Project
-This the Lab and PC management Web base Application.
+This is the Lab and PC management Web base Application.
