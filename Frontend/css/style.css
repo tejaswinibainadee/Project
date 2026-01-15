@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== LOGIN ===== */
+.login-bg {
+    height: 100vh;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    padding: 35px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 230px;
+    min-height: 100vh;
+    background: linear-gradient(#1b2a4e, #2e4a7f);
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background: #2979ff;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    flex: 1;
+    background: #f4f6f9;
+}
+
+/* ===== DASH CARDS ===== */
+.dash-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* =================== GLOBAL =================== */
+*{
+    box-sizing:border-box;
+}
+
+h4, h5{
+    color:#1b2a4e;
+    font-weight:600;
+}
+
+/* =================== SIDEBAR =================== */
+.sidebar{
+    background:linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+    box-shadow:4px 0 12px rgba(0,0,0,.3);
+}
+
+.sidebar h4{
+    letter-spacing:1px;
+}
+
+.sidebar a{
+    transition:.3s;
+    font-size:15px;
+}
+
+.sidebar a i{
+    margin-right:10px;
+    width:20px;
+    text-align:center;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.2);
+    padding-left:30px;
+}
+
+/* =================== CONTENT =================== */
+.content{
+    background:#eef2f7;
+    min-height:100vh;
+}
+
+/* =================== DASH CARDS =================== */
+.dash-card{
+    border-left:5px solid #2979ff;
+    transition:.3s;
+}
+
+.dash-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* =================== TABLE =================== */
+table{
+    border-radius:10px;
+    overflow:hidden;
+}
+
+table thead{
+    background:#2979ff;
+    color:white;
+}
+
+table tbody tr:hover{
+    background:#f1f6ff;
+}
+
+/* =================== BUTTONS =================== */
+.btn{
+    border-radius:30px;
+    padding:6px 18px;
+    transition:.3s;
+}
+
+.btn-success{
+    background:linear-gradient(to right,#00b09b,#96c93d);
+    border:none;
+}
+
+.btn-primary{
+    background:linear-gradient(to right,#2193b0,#6dd5ed);
+    border:none;
+}
+
+.btn-danger{
+    background:linear-gradient(to right,#cb2d3e,#ef473a);
+    border:none;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* =================== LOGIN =================== */
+.login-card{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:scale(.9);}
+    to{opacity:1;transform:scale(1);}
+}
+
+/* =================== MODALS =================== */
+.modal-content{
+    border-radius:15px;
+}
+
+/* ================= DARK MODE ================= */
+.dark body{
+    background:#0f172a;
+}
+
+.dark .content{
+    background:#020617;
+}
+
+.dark table{
+    background:#020617;
+    color:white;
+}
+
+.dark .dash-card{
+    background:#020617;
+    color:white;
+}
+
+.dark .sidebar{
+    background:linear-gradient(180deg,#020617,#020617,#020617);
+}
+
+/* ================= SEARCH ================= */
+.search-box{
+    width:300px;
+    padding:8px 15px;
+    border-radius:20px;
+    border:1px solid #ddd;
+}
+
+/* ================= SMOOTH ================= */
+*{
+    scroll-behavior:smooth;
+}
+.dash-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.dash-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Professional card colors */
+.bg-primary {background: linear-gradient(135deg, #4e73df, #224abe) !important;}
+.bg-success {background: linear-gradient(135deg, #1cc88a, #17a673) !important;}
+.bg-danger {background: linear-gradient(135deg, #e74a3b, #c0392b) !important;}
+.bg-warning {background: linear-gradient(135deg, #f6c23e, #dda20a) !important;}
+
+/* White text for all cards */
+.dash-card p, .dash-card h6 {color: #fff; margin: 0;}
+.dash-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.dash-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Professional gradients */
+.bg-primary {background: linear-gradient(135deg, #4e73df, #224abe) !important;}
+.bg-success {background: linear-gradient(135deg, #1cc88a, #17a673) !important;}
+.bg-danger {background: linear-gradient(135deg, #e74a3b, #c0392b) !important;}
+.bg-warning {background: linear-gradient(135deg, #f6c23e, #dda20a) !important;}
+
+/* White text for cards */
+.dash-card p, .dash-card h6 {color: #fff; margin: 0;}
